@@ -1,26 +1,30 @@
-humans1 = {
-	name = "humans1"
+united_earth = {
+	name = "united_earth_old"
 	spawn_enabled = no # yes / no / always
 	
 	name_list = "Human"
-	ship_prefix = "UNS"
+	ship_prefix = "SS"
 	
 	species_name = "Human"
-	species_plural = "Humans"	#we should localize this!
+	species_plural = "Humans"
 	species_adjective = "Human"
 	species_class = "MAM"
+	
 	trait = "trait_quick_learners"
-	trait = "trait_nomadic"	
+	trait = "trait_industrious"
+	trait = "trait_emotional"
+	
 	portrait = "human"
 	adjective = "Human"
 	
-	government = "indirect_democracy"
+	government = "moral_democracy"
 	ethic = "ethic_xenophile"
-	ethic = "ethic_fanatic_individualist"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_individualist"
 
-	flags = { human_1 custom_start_screen }
+	flags = { united_earth_1 custom_start_screen }
 	
-	weapon = "tech_missiles_1"
+	weapon = "tech_lasers_1"
 	ftl = warp
 	
 	planet_name = "Earth"
@@ -41,457 +45,29 @@ humans1 = {
 			file = "00_solid.dds"
 		}
 		colors={
-			"blue"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	#leader = {
-	#	name = "Dolores Muwanga"
-	#	class = ruler
-	#	portrait = "human_female_05"
-	#	experience = 1200.0
-	#}
-	
-	ruler = {
-		name = "Dolores Muwanga"
-		gender = female
-		portrait = "human_female_05"
-		texture = 0
-		hair = 1
-		clothes = 0
-	}
-}
-humans2 = {
-	name = "humans2"
-	spawn_enabled = no # yes / no / always
-	
-	name_list = "Human2"
-	ship_prefix = "CNS"
-	
-	species_name = "Human"
-	species_plural = "Humans"	#we should localize the names!
-	species_adjective = "Human"
-	species_class = "MAM"
-	trait = "trait_quick_learners"
-	trait = "trait_nomadic"	
-	portrait = "human"
-	adjective = "Human"
-	
-	government = "military_dictatorship"
-	ethic = "ethic_xenophobe"
-	ethic = "ethic_fanatic_militarist"
-
-	flags = { human_2 custom_start_screen }
-	
-	weapon = "tech_lasers_1"
-	ftl = wormhole
-	
-	planet_name = "Unity"
-	planet_class = "pc_continental"
-	initializer = "deneb_system"
-	system_name = "Deneb"
-	
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
-	
-	empire_flag = {
-		icon= {
-			category = "human"
-			file = "flag_human_4.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "stripe.dds"
-		}
-		colors={
-			"red"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	#leader = {
-	#	name = "Sidney Beauclair"
-	#	class = ruler
-	#	portrait = "human_male_04"
-	#	experience = 1200.0
-	#}	
-	ruler = {
-		name = "Sidney Beauclair"
-		portrait = "human_female_04"
-		gender = female
-		texture = 0
-		hair = 6
-		clothes = 2
-	}
-}
-
-# Tzynn
-tzynn = {
-	name = "tzynn"
-	spawn_enabled = yes # yes / no / always
-	
-	name_list = "REP1"
-	ship_prefix = "TIS"
-	
-	species_name = "Tzynn"
-	species_plural = "Tzynn"	#we should localize the names!
-	species_adjective = "Tzynn"
-	species_class = "REP"
-	trait = "trait_strong"
-	trait = "trait_talented"
-	trait = "trait_nonadaptive"
-	portrait = "rep9"
-	adjective = "Tzynn"
-	
-	government = "military_dictatorship"
-	ethic = "ethic_collectivist"
-	ethic = "ethic_fanatic_militarist"	
-	
-	weapon = "tech_mass_drivers_1"
-	ftl = warp
-	
-	planet_name = "Tzynnia"
-	planet_class = "pc_desert"
-	system_name = Sal'Tzynn
-	
-	graphical_culture = "reptilian_01"
-	city_graphical_culture = "reptilian_01"
-	
-	empire_flag = {
-		icon= {
-			category = "pointy"
-			file = "flag_pointy_2.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "v.dds"
-		}
-		colors={
-			"red"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	#leader = {
-	#	class = ruler
-	#	experience = 1200.0
-	#}
-	ruler = {
-		name = "Sazzeeja"
-		gender = male
-		portrait = "rep9"
-		texture = 1
-		#hair = 0
-		clothes = 4
-	}	
-}
-
-# Yondar
-yondar = {
-	name = "yondar"
-	spawn_enabled = yes # yes / no / always
-	
-	species_name = "Yondar"
-	species_plural = "Yondar"	#we should localize the names!
-	species_adjective = "Yondari"
-	adjective = "Yondar"
-	
-	name_list = "AVI1"
-	ship_prefix = "YRS"
-	
-	species_class = "AVI"
-	trait = "trait_talented"
-	trait = "trait_solitary"
-	trait = "trait_natural_physicists"
-	portrait = "avi10"
-	
-	planet_name = "Yondarim"
-	planet_class = "pc_tropical"
-	system_name = B'Yond
-	
-	government = "divine_mandate"
-	ethic = "ethic_pacifist"
-	ethic = "ethic_fanatic_spiritualist"	
-	
-	weapon = "tech_lasers_1"
-	ftl = hyperdrive
-	
-	graphical_culture = "avian_01"
-	city_graphical_culture = "avian_01"
-	
-	empire_flag = {
-		icon= {
-			category = "zoological"
-			file = "flag_zoological_6.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "stripes.dds"
-		}
-		colors={
-			"blue"
 			"dark_blue"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler = {
-		name = "Yeerak"
-		gender = male
-		portrait = "avi10"
-		texture = 1
-		#hair = 0
-		clothes = 3
-	}
-}
-
-# Ix'Idar
-ixidar = {
-	name = "ixidar"
-	spawn_enabled = yes # yes / no / always
-	
-	species_name = "Ix'Idar"
-	species_plural = "Ix'Idars"	#we should localize the names!
-	species_adjective = "Ix'Idari"
-	adjective = "Ixidar"
-	
-	name_list = "ART1"
-	ship_prefix = "ICS"
-	
-	species_class = "ART"
-	trait = "trait_rapid_breeders"
-	trait = "trait_communal"
-	trait = "trait_repugnant"
-	trait = "trait_strong"
-	portrait = "art12"
-	
-	planet_name = "Ix'Athrak"
-	planet_class = "pc_arid"
-	system_name = Athrak
-	
-	government = "despotic_hegemony"
-	ethic = "ethic_materialist"
-	ethic = "ethic_fanatic_collectivist"
-	
-	weapon = "tech_mass_drivers_1"
-	ftl = hyperdrive
-	
-	graphical_culture = "arthropoid_01"
-	city_graphical_culture = "arthropoid_01"
-	
-	empire_flag = {
-		icon= {
-			category = "ornate"
-			file = "flag_ornate_18.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "00_solid.dds"
-		}
-		colors={
-			"dark_grey"
 			"black"
 			"null"
 			"null"
 		}
 	}
 	
+	#ruler = { # Don't touch
+	#	name = "Jonathan Archer"
+	#	gender = male
+	#	portrait = "human_male_04"
+	#	texture = 0
+	#	hair = 3
+	#	clothes = 2
+	#}
+	
 	ruler = {
-		name = "Xid'Ixa'Xir'Idon"
+		name = "Nathan Samuels"
 		gender = male
-		portrait = "art12"
-		texture = -1
-		#hair = 0
-		clothes = 2
-	}
-}
-
-# Chinorr
-chinorr = {
-	name = "chinorr"
-	spawn_enabled = yes # yes / no / always
-	
-	species_name = "Chinorr"
-	species_plural = "Chinorr"	#we should localize the names!
-	species_adjective = "Chinorr"
-	adjective = "Chinorran"
-	
-	name_list = "MOL1"
-	ship_prefix = "CUS"
-	
-	species_class = "MOL"
-	trait = "trait_industrious"
-	trait = "trait_repugnant"
-	trait = "trait_natural_engineers"
-	portrait = "mol11"
-	
-	planet_name = "Chicora"
-	planet_class = "pc_arid"
-	system_name = Chiconaph
-	
-	government = "science_directorate"
-	ethic = "ethic_individualist"
-	ethic = "ethic_fanatic_materialist"	
-	
-	weapon = "tech_lasers_1"
-	ftl = hyperdrive
-	
-	graphical_culture = "molluscoid_01"
-	city_graphical_culture = "molluscoid_01"
-	
-	empire_flag = {
-		icon= {
-			category = "ornate"
-			file = "flag_ornate_4.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "triangle_split.dds"
-		}
-		colors={
-			"red_orange"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler = {
-		name = "Jurrba Shogg"
-		gender = male
-		portrait = "mol11"
-		texture = 1
-		#hair = 0
-		clothes = 3
-	}
-}
-
-# Jehetma
-jehetma = {
-	name = "jehetma"
-	spawn_enabled = yes # yes / no / always
-	
-	species_name = "Jehetma"
-	species_plural = "Jehetma"	#we should localize the names!
-	species_adjective = "Jehetman"
-	adjective = "Jahetman"
-	
-	name_list = "FUN1"
-	ship_prefix = "JDS"
-	
-	species_class = "FUN"
-	trait = "trait_slow_breeders"
-	trait = "trait_thrifty"
-	trait = "trait_communal"
-	portrait = "fun13"
-	
-	planet_name = "Jehet Prime"
-	planet_class = "pc_tundra"
-	system_name = Jehet
-	
-	government = "peaceful_bureaucracy"
-	ethic = "ethic_collectivist"
-	ethic = "ethic_fanatic_pacifist"
-	
-	weapon = "tech_mass_drivers_1"
-	ftl = wormhole
-	
-	graphical_culture = "fungoid_01"
-	city_graphical_culture = "fungoid_01"
-	
-	empire_flag = {
-		icon= {
-			category = "ornate"
-			file = "flag_ornate_7.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "00_solid.dds"
-		}
-		colors={
-			"dark_brown"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler = {
-		name = "Haragma"
-		gender = female
-		portrait = "fun13"
-		texture = -1
-		#hair = 0
-		clothes = 2
-	}
-}
-
-# Scyldari
-scyldari = {
-	name = "scyldari"
-	spawn_enabled = yes # yes / no / always
-	
-	species_name = "Scyldari"
-	species_plural = "Scyldarians"	#we should localize the names!
-	species_adjective = "Scyldarian"
-	adjective = "Scyldarian"
-	
-	name_list = "MAM1"
-	ship_prefix = "SCS"
-	
-	species_class = "MAM"
-	trait = "trait_charismatic"
-	trait = "trait_solitary"
-	trait = "trait_natural_engineers"
-	trait = "trait_quick_learners"
-	portrait = "mam6"
-	
-	planet_name = "Scyldaria"
-	planet_class = "pc_ocean"
-	system_name = Scyldon
-	
-	government = "direct_democracy"
-	ethic = "ethic_materialist"
-	ethic = "ethic_pacifist"
-	ethic = "ethic_xenophile"
-	
-	weapon = "tech_mass_drivers_1"
-	ftl = warp
-	
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
-	
-	empire_flag = {
-		icon= {
-			category = "spherical"
-			file = "flag_spherical_15.dds"
-		}
-		background= {
-			category = "backgrounds"
-			file = "00_solid.dds"
-		}
-		colors={
-			"burgundy"
-			"orange"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler = {
-		name = "Dackam"
-		gender = female
-		portrait = "mam6"
-		texture = 3
-		#hair = 0
-		clothes = 3
+		portrait = "human_male_04"
+		texture = 0
+		hair = 4
+		clothes = 4
 	}
 }
 
@@ -542,7 +118,9 @@ scyldari = {
 	spawn_enabled=always
 	ethic="ethic_individualist"
 	ethic="ethic_fanatic_materialist"
-	trait="trait_arrogance"
+	
+	trait="trait_venerable"
+	trait="trait_slow_breeders"
 	trait="trait_logical"
 }
 
@@ -597,122 +175,3 @@ scyldari = {
 	trait="trait_repugnant"
 	trait="trait_nonadaptive"
 }
-
-
-## Kel-Azaan
-#kel_azaan = {
-#	name = "kel_azaan"
-#	species_name = "Kel-Azaan"
-#	species_plural = "Azaans"	#we should localize the names!
-#	species_adjective = "Kel-Azaan"
-#	adjective = "Azaan"
-#	
-#	name_list = "MAM3"
-#	ship_prefix = "KAS"
-#	
-#	species_class = "MAM"
-#	trait = "trait_strong"
-#	trait = "trait_adaptive"
-#	trait = "trait_sedentary"
-#	trait = "trait_natural_physicists"
-#	portrait = "mam11"
-#	
-#	planet_name = "Azak"
-#	planet_class = "pc_arctic"
-#	
-#	government = "military_republic"
-#	ethic = "ethic_individualist"
-#	ethic = "ethic_militarist"
-#	ethic = "ethic_spiritualist"	
-#	
-#	weapon = "tech_mass_drivers_1"
-#	ftl = wormhole
-#	
-#	graphical_culture = "mammalian_01"
-#	city_graphical_culture = "mammalian_01"
-#	
-#	empire_flag = {
-#		icon= {
-#			category = "spherical"
-#			file = "flag_spherical_15.dds"
-#		}
-#		background= {
-#			category = "backgrounds"
-#			file = "00_solid.dds"
-#		}
-#		colors={
-#			"burgundy"
-#			"orange"
-#			"null"
-#			"null"
-#		}
-#	}
-#	
-#	#leader = {
-#	#	name = "Delzaam"
-#	#	class = ruler
-#	#	portrait = "mam11"
-#	#	experience = 1200.0
-#	#}
-#	ruler = {
-#		randomized = yes
-#	}
-#}
-
-## Paridni
-#paridni = {
-#	name = "paridni"
-#	species_name = "Paridni"
-#	species_plural = "Paridnis"	#we should localize the names!
-#	species_adjective = "Paridnian"
-#	adjective = "Paridnin"
-#	
-#	name_list = "ART1"
-#	ship_prefix = "MPS"
-#	
-#	species_class = "ART"
-#	trait = "trait_thrifty"
-#	trait = "trait_weak"
-#	trait = "trait_talented"
-#	portrait = "art6"
-#	
-#	planet_name = "Parakon"
-#	planet_class = "pc_tropical"
-#	
-#	government = "plutocratic_oligarchy"
-#	ethic = "ethic_materialist"
-#	ethic = "ethic_fanatic_xenophile"	
-#	
-#	weapon = "tech_lasers_1"
-#	ftl = wormhole
-#	
-#	graphical_culture = "arthropoid_01"
-#	city_graphical_culture = "arthropoid_01"
-#	
-#	empire_flag = {
-#		icon= {
-#			category = "spherical"
-#			file = "flag_spherical_15.dds"
-#		}
-#		background= {
-#			category = "backgrounds"
-#			file = "00_solid.dds"
-#		}
-#		colors={
-#			"burgundy"
-#			"orange"
-#			"null"
-#			"null"
-#		}
-#	}
-#	
-#	#leader = {
-#	#	name = "Iz Mok Nar"
-#	#	class = ruler
-#	#	portrait = "art6"
-#	#	experience = 1200.0
-#	#}
-#	ruler = {
-#		randomized = yes
-#	}
-#}

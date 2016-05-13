@@ -2,20 +2,7 @@
 # Species Traits #
 ##################
 
-trait_arrogance = {
-	cost = -2
-	modifier = { 
-		pop_xenophobia = 0.2
-	}
-}
-
-trait_logical = {
-	cost = 0
-	modifier = {
-		country_physics_tech_research_speed = 0.15
-		pop_happiness = -0.2
-	}
-}
+##New traits should always be added at end
 
 trait_agrarian = {
 	cost = 2
@@ -409,5 +396,35 @@ trait_presentient_irradiated = {
 	modifier = {
 		pc_nuked_habitability = 1
 		leader_age = 30
+	}
+}
+
+
+##New traits
+
+trait_arrogance = {
+	cost = -2
+	modifier = { 
+		pop_xenophobia = 0.2
+	}
+}
+
+trait_logical = {
+	cost = -2
+	opposites = { "trait_emotional" }
+	modifier = {
+		country_physics_tech_research_speed = 0.15
+		pop_happiness = -0.2
+		pop_xenophobia = 0.1
+	}
+}
+
+trait_emotional = {
+	cost = -2
+	opposites = { "trait_logical" }
+	modifier = {
+		pop_war_happiness = -0.2
+		pop_migration_time = 0.1
+		pop_happiness = 0.1
 	}
 }

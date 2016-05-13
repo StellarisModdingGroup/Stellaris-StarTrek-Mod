@@ -2216,11 +2216,13 @@
  ####################################
 
  trait_arrogance:0 "Arrogance"
- trait_arrogance_desc:0 "§LThis species appears very arrogant to other ones.§!\n"
+ trait_arrogance_desc:0 "§LMembers of this species appears to be very arrogant towards other species.§!\n"
+ trait_emotional:0 "Emotional"
+ trait_emotional_desc:0 "§LMembers of this tend to act irrationaly and/or impulsive based on their emotions, thus this tends to influence their decision making.§!\n"
  trait_ancientwisdom:0 "Wisdom elders"
  trait_ancientwisdom_desc:0 "§LThis species can grow to an age of big wisdom and .§!\n"
  trait_logical:0 "Logical Thinkers"
- trait_logical_desc:0 "§LThis species thinks very logical and supresses its emotions.§!\n"
+ trait_logical_desc:0 "§LMembers of this species have learned to embrace Logic and supresses their emotions.§!\n"
  trait_rapid_breeders:0 "Rapid Breeders"
  trait_rapid_breeders_desc:0 "§LThis species reproduces at a very rapid rate, increasing population growth.§!\n"
  trait_slow_breeders:0 "Slow Breeders"
