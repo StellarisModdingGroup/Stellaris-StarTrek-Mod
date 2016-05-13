@@ -1,0 +1,5 @@
+MAM = {
+	portraits = {
+		"andorian"
+	}
+}
