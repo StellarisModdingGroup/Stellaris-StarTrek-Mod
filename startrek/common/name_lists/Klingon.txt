@@ -1,0 +1,303 @@
+﻿### United Nations of Earth
+Klingon = {
+
+	ship_names = {
+		generic = {
+			Thach Clostermann Mitralexis Shinohara Iwamoto Mölders Skalski MacLachlan Caldwell Litvyak Yeager McCampbell O'Hare Sealion Balao Gato Doolittle
+		}
+		
+		corvette = {
+			Aardvark Accentor Adder Albatross Alligator Anaconda Antelope Armadillo Asp Badger Bass Beagle Bloodhound Buffalo Bulldog Buzzard Camel Cheetah
+			Cobra Coyote Dingo Dolphin Dragonfly Dromedary Eagle Elephant Falcon Ferret Firefly Fox Gazelle Glowworm "Grey Wolf" Greyhound Haddock Hawk
+			Jackal Jackdaw Jaguar Kangaroo Kestrel "King Cobra" "King Fish" Ladybird Leopard Lion Lizard Lynx Minx Mongoose Mosquito Narwhal Nighthawk Ocelot Orca 
+			Osprey Panther Peacock Pelican Penguin Petrel Platypus Polecat Porcupine Puma Python Rattlesnake Raven Salamander Sardine Scorpion Shark Shrike
+			Skylark Sparrow Spider Starfish Stingray Stork Sturgeon Swordfish Tapir Tiger "Tiger Shark" Vulture Walrus Wolverine Apache Aztec Cossack Dervish
+			Druid Highlander Janissary Matador Papillon Parthian Patrician Saracen Sphinx Sultan Tomahawk Viking Zulu Abhay Akshay Akula Soyuz Harrier "Tomoe Gozen"
+			Garuda Yangwei Datong Haifeng Hailong Yongcheng Yinghao Taiyang Chaoyang Qiuxing Guangxing Zhengsheng Taizhao Meihong Wulong Jiangkun Acorn
+			Musketeer Pharaoh Mongol Rickenbacker "John Paul Jones" Doblestnyi Steregushchiy Soobrazitelny "Rodger Young" "Crazy Horse" Richthofen Boyington
+			Fonck Mannock Bishop Kazakov Coppens Brumowski Baracca Hartmann Juutilainen Nishizawa Sakai Shestakov Kozhedub Cantacuzino "Van Lierde" Bong
+		}
+		
+		constructor = {
+			Pacific Atlantic Adriatic Amazon Danube India Africa Volga Colorado Ganges Jordan Mekong "Rio Grande" Rubicon Yangtze Mississippi Yukon Indus
+			Rhine Tigris Sahara Bengal Merrimack Potomac Susquehanna Orinoco Shenandoah
+		}
+		
+		colonizer = {
+			Mayflower Abundance Bountiful Felicity Hope Opportunity Serenity Unity Destiny Britannia Byzantium Caledonia "El Dorado" Knossos Memphis 
+			Olympus Persepolis "Sierra de la Plata" Sparta Valhalla "Crystal Palace" Alaska Angola Australia Brazil Canada Congo Guinea India Indonesia 
+			Jamaica Macau Mozambique Philippines Somalia "Sri Lanka" Taiwan
+		}
+		
+		science = {
+			Aldrin Armstrong Columbus Copernicus Cortez Drake Hubble Goddard Galileo Einstein Gagarin Tereshkova "Zheng He" "Leif Ericson" Magellan "James Cook"
+			"Marco Polo" Newton Tesla "Von Braun" "Walter Raleigh" Asimov Clark Sagan "Ibn Battuta" Kepler Ptolemy Pytheas Azophi Discovery Voyager Tradewind Scout 
+			Pioneer Explorer Sojourner "Santa Maria" Hawking Earhart Nobel Kelvin Fahrenheit Equinox Lagrange Tsiolkovsky
+		}
+		
+		destroyer = {
+			Amsterdam Austin Athens Atlanta Baghdad Baltimore Bangkok Barcelona Beijing Belfast Berlin Bombay Boston Hyderabad Budapest "Buenos Aires" Cairo Calcutta
+			"Cape Town" Chicago Copenhagen Damascus "Dar es Salaam" Detroit Dubai Dublin Edinburgh Gibraltar Glasgow Guangzhou Hanoi Havana Helsinki "Hong Kong"
+			Houston Istanbul Jakarta Jerusalem Johannesburg Kiev London "Los Angeles" Madrid Manila Minsk Moscow Mumbai "New York" "New Orleans" Novgorod Osaka Oslo 
+			Paris Prague "Rio de Janeiro" Rome Rotterdam "San Francisco" "Sao Paulo" Sarajevo Seattle Seoul Sevastopol Shanghai Singapore "St. Louis" Stockholm Tokyo
+			Toronto Vancouver Vienna Vladivostok Warsaw Sydney Brisbane "Mexico City" München Nairobi Smolensk Casablanca Venice Mogadishu Montreal Birmingham
+			Liverpool Manchester Kabul Kyoto Volgograd "St. Petersburg" Frankfurt Belgrade Marseille Brussels Tripoli Tehran Quebec Florence Exeter Dallas Denver
+			Lagos Melbourne Calgary Ottawa Algiers Brazzaville Santiago Montevideo Bogota Chengdu Hangzhou Shaoxing Yokohama Pittsburgh Philadelphia Miami Lisbon
+			Hamburg Bremen Phoenix Indianapolis Minneapolis Milan Surabaya "Kuala Lumpur" "Abu Dhabi" Ankara Beirut Kathmandu Tapei Islamabad Karachi Zürich Delhi
+			Bangalore Düsseldorf "Tel Aviv" Lima Luxembourg Bucharest Geneva Gothenburg Lyon Bratislava Tunis Riyadh Riga Valencia Krakow Vilnius Tallinn Edmonton
+			Tijuana Trondheim
+		}
+		
+		cruiser = {
+			Bolivar Brusilov Churchill Clausewitz Garibaldi "Gustavus Adolphus" Hammurabi "Julius Caesar" Justinian Lincoln Patton Rommel "Sun Tzu" Liberator
+			Zhukov "Alexander Nevsky" Pyrrhus "Yi Sun-sin" Heihachiro "Khalid ibn al-Walid" Vasa Hindenburg "De Gaulle" Subutai Nagato Scharnhorst Clemenceau 
+			Richelieu "Jean Bart" Sparviero Affondatore Tromp "De Ruyter" Esperanza Pelayo Velasco Juneau Sherwood Alamo Bannockburn Borodino Breitenfeld Cannae 
+			"El Alamein" Gaugamela Kadesh Kursk Masada Normandy Salamis Sedan Tannenberg Ticonderoga Thermopylae Marengo Leipzig Shiloh Königgrätz Ypres 
+			Somme Suomussalmi Kharkov Guadalcanal "Leyte Gulf" "Dien Bien Phu" Thymbra Manassas Blenheim Unicorn Adelphi Angel Borealis Bounty Emancipator 
+			"Morning Star" "Shi Lang" Vikramaditya Viraat Vikrant Vishal Napoleon Kongo Oriskany "Bunker Hill" Farragut "Kitty Hawk" "Royal Oak" Thunderbolt 
+			"Royal Sovereign" Marathon "Frederick II" Nimitz Eisenhower Roland "Tran Hung Dao" Themistocles
+		}
+		
+		battleship = {
+			Ulysses Xenophon Xerxes Nelson Hercules Icarus Atlas Apollo Ajax Bellerophon Excalibur Agrippa Alexander Belisarius Hannibal Washington Saladin 
+			Bismarck Yamato Actium Agincourt Austerlitz Gettysburg Jutland Trafalgar Tsushima "Valley Forge" Verdun Waterloo Granicus Pharsalus Akira Charlemagne
+			"Black Prince" Hood Potemkin Musashi Warspite Victory Courage Dauntless Endeavor Excelsior Formidable Indefatigable Chivalrous Valiant Monitor 
+			Bulwark Defender Endurance Vigilant Resolute Fortitude Yamamoto Lexington Midway Saratoga Yorktown "Coral Sea" Hermes Wasp Hornet "Ark Royal" 
+			Essex Akagi Kaga Illustrious Intrepid Invincible Enterprise Constellation Constitution Ranger Andromeda Aquila Century Concord Defiant Galaxy 
+			Odyssey Orion Providence Reliant Pegasus
+		}
+		
+		orbital_station = { }
+		mining_station = { }
+		research_station = { }
+		wormhole_station = { }
+		terraform_station = { }
+		observation_station = { }
+		outpost_station = {
+			random_names = {
+				"Far Reach" Watchtower Sphered Influential Assertion SPACERAD "Watchful Eye" Sentinel Demarcator "Frontier Finalizer" "Ever Watchful" Divider Bastion "Home Turf" Wide
+			}
+			sequential_name = "%O% Frontier Outpost"
+		}
+		
+		transport = {
+			Cowpens "Belleau Wood" Bataan Monterey Veracruz Tarawa "Iwo Jima" Okinawa Inchon "Goose Green" Gallipoli Mukden Narvik Narva Poltava "Lake Peipus"
+			Malta Antietam "Baton Rouge" Beauport Abukir Lund Issus Changping "Teutoburg Forest" "Watling Street" Yarmouk Salamanca Berezina Fredericksburg
+			Chickamauga Caporetto "Khalkhin Gol" Gazala "Monte Cassino" Saipan Breslau
+		}
+
+		military_station_small = { 
+			Mercury Venus Terra Mars Jupiter Saturn Uranus Neptune Luna Phobos Deimos Ceres 
+			Ganymede Callisto Io Europa Titan Rhea Iapetus Dione Tethys Enceladus Mimas Titania 
+			Oberon Umbriel Ariel Miranda Triton Pluto Charon 
+		}
+		
+		#military_station_small = { 
+		#	sequential_names = { 
+		#		"Outpost 1" "Outpost 2" "Outpost 3" "Outpost 4" "Outpost 5" "Outpost 6" "Outpost 7" "Outpost 8" "Outpost 9" "Outpost 10" "Outpost 11" "Outpost 12"
+		#		"Outpost 13" "Outpost 14" "Outpost 15" "Outpost 16" "Outpost 17" "Outpost 18" "Outpost 19" "Outpost 20" "Outpost 21" "Outpost 22" "Outpost 23"
+		#		"Outpost 24" "Outpost 25" "Outpost 26" "Outpost 27" "Outpost 28" "Outpost 29" "Outpost 30" "Outpost 31" "Outpost 32" "Outpost 33" "Outpost 34"
+		#		"Outpost 35" "Outpost 36" "Outpost 37" "Outpost 38" "Outpost 39" "Outpost 40"
+		#	}
+		#}
+		
+		military_station_medium = { 
+			Mercury Venus Terra Mars Jupiter Saturn Uranus Neptune Luna Phobos Deimos Ceres 
+			Ganymede Callisto Io Europa Titan Rhea Iapetus Dione Tethys Enceladus Mimas Titania 
+			Oberon Umbriel Ariel Miranda Triton Pluto Charon 
+		}
+		
+		#military_station_medium = {
+		#	random_names = {
+		#		"Citadel Station" "Albacore Station" "Gateway Station" "Vincent Station" "Babylon Station" "Caernavon Station" "Acre Station" "Pembroke Station" 
+		#		"Acheron Station" "Spithead Station" "Halifax Station" "Victoria Station" "Chatham Station" "Anchorage Station" "Scapa Flow Station" "Hampton Roads Station"
+		#		"Brooklyn Station" "Norfolk Station" "Newport Station" "Guam Station" "Pensacola Station" "Vesuvius Station" "McKinley Station" "Everest Station"
+		#		"Kilimanjaro Station" "Aconcagua Station" "Elbrus Station" "St. Helens Station" "Fuji Station" "Olympus Station" "Sinai Station" "Ambrose Station"
+		#		"Bermuda Station" "Farpoint Station" "Blue Star Station" "Olympus Mons Station" "Tharsis Station" "Syrtis Station" "Blackham Station"
+		#	}
+		#		
+		#}
+		
+		military_station_large = { 
+			Mercury Venus Terra Mars Jupiter Saturn Uranus Neptune Luna Phobos Deimos Ceres 
+			Ganymede Callisto Io Europa Titan Rhea Iapetus Dione Tethys Enceladus Mimas Titania 
+			Oberon Umbriel Ariel Miranda Triton Pluto Charon
+		}
+		
+		#military_station_large = { 
+		#	random_names = {
+		#		"Fletcher Naval Base" "Perry Naval Base" "Butakov Naval Base" "Morris Naval Base" "Moorsom Naval Base" "Hart Naval Base" "Hargood Naval Base"
+		#		"Spruance Naval Base" "Tanaka Naval Base" "Halsey Naval Base" "Turner Naval Base" "Doria Naval Base" "Tirpitz Naval Base" "Cunningham Naval Base"
+		#		"Jellicoe Naval Base" "Hipper Naval Base" "Beatty Naval Base" "Potemkin Naval Base" "Durham Naval Base" "Codrington Naval Base" "Milne Naval Base"
+		#		"Laforey Naval Base" "Tyler Naval Base" "Hawke Naval Base" "Yonai Naval Base" "Pound Naval Base" "King Naval Base" "Crutchley Naval Base"
+		#		"Mountbatten Naval Base" "Kountouriotis Naval Base" "Kuznetsov Naval Base" "Essen Naval Base" "Kornilov Naval Base" "Suffren Naval Base"
+		#		"Treville Naval Base" "Villeneuve Naval Base" "Grasse Naval Base" "Byng Naval Base" "Lezo Naval Base"
+		#	}
+		#}
+	}
+
+	fleet_names = {
+		random_names = {
+			"The Hoplite Fleet" "The Phalanx Fleet" "The Centurion Fleet" "The Immortal Fleet" "The Knight Fleet" "The Archer Fleet" "The Cavalry Fleet" "The Lancer Fleet" "The Landsknechte Fleet" "The Gendarme Fleet" "The Arquebusier Fleet" "The Tercio Fleet" "The Musketeer Fleet" "The Millenial Fleet"
+		}
+		sequential_name = "%O% Fleet"
+	}
+	
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Planetary Guard"
+		}
+
+		assault_army = {
+			sequential_name = "%O% Expeditionary Force"
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Indentured Rifles"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Clone Army"
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Hunter-Killer Group"
+		}
+		
+		android_army = {
+			sequential_name = "%O% Synthetic Rangers"
+		}
+		
+		psionic_army = { 
+			sequential_name = "%O% Psi Commando"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Bio-Warfare Division"
+		}
+		
+		gene_warrior_army = {
+			random_names = {
+				"SARC-A 'Gladiators'" "SARC-B 'Widowmakers'" "SARC-C 'Immortals'" "SARC-D 'Berserkers'" "SARC-E 'Assassins'"
+				"SARC-F 'Reapers'" "SARC-G 'Nighthawks'" "SARC-H 'Desperados'" "SARC-I 'Grey Knights'" "SARC-J 'Roughnecks'" 
+			}
+			sequential_name = "%O% Bio-Engineered Squadron"
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				"New Jerusalem" Anchor Dis Avalon Bounty Hope Olympia Serendipity Spring Thinis Salaam Xianyang Concord
+				Theia Tuscany "New Roanoke" Wenzhou "New Jamestown" "New Troy" Delgovicia "Wang Tong" Al-Jissa Al-Mada'in 
+				Al-Nuqayrah Al-Karak Al-Matabbah "Las Veredas" "San Lucas" "San Fernando" "San Cristóbal" "Nueva Sonora" 
+				"Puerto González" Nozomi Akatsuki "Nueva Cádiz" "La Isabela" "New Coventry" "St. Yegorov" "St. Pomeroy"
+				"Port Karakosov"
+			}
+		}
+		
+		pc_desert = {
+			names = {
+				"Nova Arabia" Sahara Gobi Kalahari Mojave Patagonia Syria Chihuahua Sand "Kara Kum" Colorado Sonora 
+				"Kyzyl Kum" Taklamakan Thar Gibson Namib Lut Kavir Dune Kali Muspelheim Vulcan Baal Carthage 
+				Ordos Khara Lop Maranjab Negev Sinai Atacama Simpson
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				Lebanon Tyre Antioch Jaxartes Oxus Turan Accona Bardenas Larzac Oltenia Tabernas Atacama Tanami 
+				Rangipo "New Mars" Canaan
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				Amazonia Congo Ecuador Rain Storm Monsoon Bengal "New Africa" Kishkindha Zanzibar Kipling
+			}
+		}
+		
+		pc_continental = {
+			names = {
+				Albion Amor Dawn Horizon Asgard "Terra Nova" Kongzi Zoroaster "Tian Yi" 
+				"Wu Ding" Zheng "Gao Zu" Tokugawa Oda Toyotomi Rama Vishnu Soma Pangea
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				Eden Elysium Cornucopia Utopia Shambhala Xanadu Shangri-La
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				Atlantis Oceania Pacifica Atlantica Euxina Hyrcania Rubrica Erythraea Baltica R'lyeh Dagon Kraken Aegea 
+				Adriatica Tyrrhenia Mediterranea Mare "Port Rabcewicz" Ningbo
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				Iceland Canada Kola Scandza Utgard Rus Blizzard Taiyuan
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				Thule Arctica Greenland Alaska Baffin Siberia Niflheim Hyperborea
+			}
+		}
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			first_names_male = {
+				Amar Antaak A'trom Atul Azetbur Ba'el Barak-Kadan Bar'el Barot B'Etor B'iJik Bo'rak Brok'tan Brota Bu'kaH Chang Ch'Pok 
+				Ch'Rega Ch'Targh Chu'vok Darok Dax D'Ghor Divok Doran Drex Duras Gi'ral Gorkon Goroth Gowron Grilka G'trok Hij'Qa H'ohk
+				Hon-Tihl H'ta Huraga Huss Japar Ja'rod J'Dan Jodmos Kahless Kahlest Kahmar Kali Kamarag Kang Karana Kargan Katogh Kaybok
+				Kaz Kee-Bhor Keedera K'Ehleyr Kell Kerla Klaa Klaang Klag K'mpec K'mtar K'Nera K'Nor Kobor Kodrak Kohlar Kolana Kolax
+				Kolos Koloth Konmel Kor Koral Korath Korax Kornan Korok Koroth Korrd Korris Kortar Koth Kozak Kras K'Ratak Krelik Krell
+				K'Rene K'retok Kruge K'Tal K'Temang K'Temoc K'Trelan Kulge Kunivas Kurak Kuri Kurn K'Vada K'Vagh K'Vok Laneth Larg Larna
+				Leskit Linkasa L'Kor L'Naan Lorgh Lukara Lurkan Lursa Magh Maltz Mara Marab Martok Miral Mogh Molor Morag Morak Morath
+				Morka Mow'ga M'Rek M'Rel Mur'Eq N'Garen Noggra Nu'Daq Orak Ortakin Pahash M'Kota Reclaw Rodek Shannara Rurik Rynar Sarpek
+				Shenara ShiVang Shovak Sirella Sompek Sorval Stex Synon T'vis Talij Tanas Tavana Tel-Peh Telok T'Greth Thopok T'Kar Toq
+				Torak Toral Torg Torin B'Elanna Tse'Dek Tumek Vagh Valkris Vekma Vixis Vorok W'mar Worf Yeto Zegov
+			}
+			first_names_female = {
+				Amar Antaak A'trom Atul Azetbur Ba'el Barak-Kadan Bar'el Barot B'Etor B'iJik Bo'rak Brok'tan Brota Bu'kaH Chang Ch'Pok 
+				Ch'Rega Ch'Targh Chu'vok Darok Dax D'Ghor Divok Doran Drex Duras Gi'ral Gorkon Goroth Gowron Grilka G'trok Hij'Qa H'ohk
+				Hon-Tihl H'ta Huraga Huss Japar Ja'rod J'Dan Jodmos Kahless Kahlest Kahmar Kali Kamarag Kang Karana Kargan Katogh Kaybok
+				Kaz Kee-Bhor Keedera K'Ehleyr Kell Kerla Klaa Klaang Klag K'mpec K'mtar K'Nera K'Nor Kobor Kodrak Kohlar Kolana Kolax
+				Kolos Koloth Konmel Kor Koral Korath Korax Kornan Korok Koroth Korrd Korris Kortar Koth Kozak Kras K'Ratak Krelik Krell
+				K'Rene K'retok Kruge K'Tal K'Temang K'Temoc K'Trelan Kulge Kunivas Kurak Kuri Kurn K'Vada K'Vagh K'Vok Laneth Larg Larna
+				Leskit Linkasa L'Kor L'Naan Lorgh Lukara Lurkan Lursa Magh Maltz Mara Marab Martok Miral Mogh Molor Morag Morak Morath
+				Morka Mow'ga M'Rek M'Rel Mur'Eq N'Garen Noggra Nu'Daq Orak Ortakin Pahash M'Kota Reclaw Rodek Shannara Rurik Rynar Sarpek
+				Shenara ShiVang Shovak Sirella Sompek Sorval Stex Synon T'vis Talij Tanas Tavana Tel-Peh Telok T'Greth Thopok T'Kar Toq
+				Torak Toral Torg Torin B'Elanna Tse'Dek Tumek Vagh Valkris Vekma Vixis Vorok W'mar Worf Yeto Zegov
+			}
+			second_names = {
+				"(House of Amar)" "(House of Antaak)" "(House of A'trom)" "(House of Atul)" "(House of Azetbur)" "(House of Ba'el)" "(House of Barak-Kadan)" "(House of Bar'el)" "(House of Barot)" "(House of B'Etor)" "(House of B'iJik)" "(House of Bo'rak)" "(House of Brok'tan)" "(House of Brota)" "(House of Bu'kaH)" "(House of Chang)" "(House of Ch'Pok)" "(House of Ch'Rega)"
+				"(House of Ch'Targh)" "(House of Chu'vok)" "(House of Darok)" "(House of Dax)" "(House of D'Ghor)" "(House of Divok)" "(House of Doran)" "(House of Drex)" "(House of Duras)" "(House of Gi'ral)" "(House of Gorkon)" "(House of Goroth)" "(House of Gowron)" "(House of Grilka)" "(House of G'trok)" "(House of Hij'Qa)" "(House of H'ohk)"
+				"(House of Hon-Tihl)" "(House of H'ta)" "(House of Huraga)" "(House of Huss)" "(House of Japar)" "(House of Ja'rod)" "(House of J'Dan)" "(House of Jodmos)" "(House of Kahless)" "(House of Kahlest)" "(House of Kahmar)" "(House of Kali)" "(House of Kamarag)" "(House of Kang)" "(House of Karana)" "(House of Kargan)" "(House of Katogh)" "(House of Kaybok)"
+				"(House of Kaz)" "(House of Kee-Bhor)" "(House of Keedera)" "(House of K'Ehleyr)" "(House of Kell)" "(House of Kerla)" "(House of Klaa)" "(House of Klaang)" "(House of Klag)" "(House of K'mpec)" "(House of K'mtar)" "(House of K'Nera)" "(House of K'Nor)" "(House of Kobor)" "(House of Kodrak)" "(House of Kohlar)" "(House of Kolana)" "(House of Kolax)"
+				"(House of Kolos)" "(House of Koloth)" "(House of Konmel)" "(House of Kor)" "(House of Koral)" "(House of Korath)" "(House of Korax)" "(House of Kornan)" "(House of Korok)" "(House of Koroth)" "(House of Korrd)" "(House of Korris)" "(House of Kortar)" "(House of Koth)" "(House of Kozak)" "(House of Kras)" "(House of K'Ratak)" "(House of Krelik)" "(House of Krell)"
+				"(House of K'Rene)" "(House of K'retok)" "(House of Kruge)" "(House of K'Tal)" "(House of K'Temang)" "(House of K'Temoc)" "(House of K'Trelan)" "(House of Kulge)" "(House of Kunivas)" "(House of Kurak)" "(House of Kuri)" "(House of Kurn)" "(House of K'Vada)" "(House of K'Vagh)" "(House of K'Vok)" "(House of Laneth)" "(House of Larg)" "(House of Larna)"
+				"(House of Leskit)" "(House of Linkasa)" "(House of L'Kor)" "(House of L'Naan)" "(House of Lorgh)" "(House of Lukara)" "(House of Lurkan)" "(House of Lursa)" "(House of Magh)" "(House of Maltz)" "(House of Mara)" "(House of Marab)" "(House of Martok)" "(House of Miral)" "(House of Mogh)" "(House of Molor)" "(House of Morag)" "(House of Morak)" "(House of Morath)"
+				"(House of Morka)" "(House of Mow'ga)" "(House of M'Rek)" "(House of M'Rel)" "(House of Mur'Eq)" "(House of N'Garen)" "(House of Noggra)" "(House of Nu'Daq)" "(House of Orak)" "(House of Ortakin)" "(House of Pahash)" "(House of M'Kota)" "(House of Reclaw)" "(House of Rodek)" "(House of Shannara)" "(House of Rurik)" "(House of Rynar)" "(House of Sarpek)"
+				"(House of Shenara)" "(House of ShiVang)" "(House of Shovak)" "(House of Sirella)" "(House of Sompek)" "(House of Sorval)" "(House of Stex)" "(House of Synon)" "(House of T'vis)" "(House of Talij)" "(House of Tanas)" "(House of Tavana)" "(House of Tel-Peh)" "(House of Telok)" "(House of T'Greth)" "(House of Thopok)" "(House of T'Kar)" "(House of Toq)"
+				"(House of Torak)" "(House of Toral)" "(House of Torg)" "(House of Torin)" "(House of B'Elanna)" "(House of Tse'Dek)" "(House of Tumek)" "(House of Vagh)" "(House of Valkris)" "(House of Vekma)" "(House of Vixis)" "(House of Vorok)" "(House of W'mar)" "(House of Worf)" "(House of Yeto)" "(House of Zegov)"
+			}
+			regnal_full_names = {
+				"Worf, son of Mogh"
+			}
+
+		}
+	
+	}
+}
