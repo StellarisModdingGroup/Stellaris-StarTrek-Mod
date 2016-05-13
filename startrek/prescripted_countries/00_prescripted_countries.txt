@@ -168,10 +168,112 @@ united_earth = {
 		hair=0
 		clothes=0
 	}
-	spawn_enabled=yes
+	spawn_enabled=always
 	ethic="ethic_fanatic_militarist"
 	ethic="ethic_spiritualist"
 	trait="trait_very_strong"
 	trait="trait_repugnant"
 	trait="trait_nonadaptive"
+}
+"Borg Collective"
+={
+	name_list="MOL2"
+	ship_prefix=""
+	species_name="Borg"
+	species_plural="Borgs"
+	species_class="ART"
+	species_adjective="Borg"
+	portrait="art10"
+	name="Borg Collective"
+	adjective="Borg"
+	government="despotic_empire"
+	ftl=hyperdrive
+	weapon="tech_lasers_1"
+	planet_name="Borg Cube I"
+	planet_class="pc_desert"
+	system_name="Borg Sphere"
+	initializer=""
+	graphical_culture="fungoid_01"
+	city_graphical_culture="fungoid_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_14.dds"
+		}
+		background={
+			category="backgrounds"
+			file="stripes.dds"
+		}
+		colors={
+			"black"
+			"orange"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Borg Queen"
+		portrait="art10"
+		texture=0
+		hair=0
+		clothes=0
+	}
+	spawn_enabled=always
+	ethic="ethic_fanatic_collectivist"
+	ethic="ethic_xenophobe"
+	trait="trait_extremely_adaptive"
+	trait="trait_slow_breeders"
+	trait="trait_repugnant"
+	trait="trait_decadent"
+}
+
+"Andorian Empire"
+={
+	name_list="MAM1"
+	ship_prefix="AIG"
+	species_name="Andorian"
+	species_plural="Andorians"
+	species_class="StarTrek"
+	species_adjective="Andorian"
+	portrait="andorian"
+	name="Andorian Empire"
+	adjective="Andorian"
+	government="plutocratic_oligarchy"
+	ftl=warp
+	weapon="tech_lasers_1"
+	planet_name="Andoria"
+	planet_class="pc_arctic"
+	system_name="Kay'va"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="molluscoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_24.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"dark_grey"
+			"dark_blue"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Ch'Shelos"
+		portrait="andorian_male_03"
+		texture=0
+		hair=1
+		clothes=3
+	}
+	spawn_enabled=always
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_spiritualist"
+	trait="trait_adaptive"
 }

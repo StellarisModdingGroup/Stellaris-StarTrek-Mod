@@ -1,5 +1,0 @@
-MAM = {
-	portraits = {
-		"andorian"
-	}
-}
