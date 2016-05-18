@@ -1,0 +1,9 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_dummy_3d_graphical_culture_preview"
+		texturefile = "gfx/interface/transp_white.dds"
+		effectFile = "gfx/FX/buttonstate_rendertarget.lua"
+		alwaystransparent = yes
+		transparencecheck = no
+	}
+}
