@@ -28,7 +28,7 @@ united_earth = {
 	ftl = warp
 	
 	planet_name = "Earth"
-	planet_class = "pc_continental"
+	planet_class = "pc_M1_Class"
 	initializer = "sol_system_initializer"
 	system_name = "Sol"
 	
