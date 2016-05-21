@@ -1158,3 +1158,14 @@ random_list = {
  		"pc_H_class"
  		"pc_K_class"
  }
+  random_list = {
+     name = "rl_non_colonizable"
+     planets = {
+         "pc_A_class"
+         "pc_B_class"
+         "pc_C_class"
+         "pc_D_class"
+         "pc_F_class"
+         "pc_G_class"
+         "pc_N_class"
+ }
