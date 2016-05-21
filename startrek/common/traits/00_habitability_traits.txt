@@ -3,90 +3,90 @@
 @tri = 0.40
 @tetra = 0.20
 
-trait_pc_H_Class_preference = {
+trait_pc_H_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.80
-		pc_M1_Class_habitability = 0.40	
-		pc_M2_Class_habitability = 0.20
-		pc_M3_Class_habitability = 0.20
-		pc_M4_Class_habitability = 0.50
-		pc_O_Class_habitability = 0.00
-		pc_P_Class_habitability = 0.05			
+		pc_H_class_habitability = 0.80
+		pc_M1_class_habitability = 0.40	
+		pc_M2_class_habitability = 0.20
+		pc_M3_class_habitability = 0.20
+		pc_M4_class_habitability = 0.50
+		pc_O_class_habitability = 0.00
+		pc_P_class_habitability = 0.05			
 	}
 }
-trait_pc_M1_Class_preference = {	
+trait_pc_M1_class_preference = {	
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.10
-		pc_M1_Class_habitability = 0.90	
-		pc_M2_Class_habitability = 0.70
-		pc_M3_Class_habitability = 0.30
-		pc_M4_Class_habitability = 0.20
-		pc_O_Class_habitability = 0.70
-		pc_P_Class_habitability = 0.05
+		pc_H_class_habitability = 0.10
+		pc_M1_class_habitability = 0.90	
+		pc_M2_class_habitability = 0.70
+		pc_M3_class_habitability = 0.30
+		pc_M4_class_habitability = 0.20
+		pc_O_class_habitability = 0.70
+		pc_P_class_habitability = 0.05
 		
 	}
 }
-trait_pc_M2_Class_preference = {
+trait_pc_M2_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_tropical_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.10
-		pc_M1_Class_habitability = 0.70	
-		pc_M2_Class_habitability = 0.90
-		pc_M3_Class_habitability = 0.10
-		pc_M4_Class_habitability = 0.30
-		pc_O_Class_habitability = 0.70
-		pc_P_Class_habitability = 0.00
+		pc_H_class_habitability = 0.10
+		pc_M1_class_habitability = 0.70	
+		pc_M2_class_habitability = 0.90
+		pc_M3_class_habitability = 0.10
+		pc_M4_class_habitability = 0.30
+		pc_O_class_habitability = 0.70
+		pc_P_class_habitability = 0.00
 	}
 }
 
-trait_pc_M3_Class_preference = {
+trait_pc_M3_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.05
-		pc_M1_Class_habitability = 0.40	
-		pc_M2_Class_habitability = 0.20
-		pc_M3_Class_habitability = 0.80
-		pc_M4_Class_habitability = 0.30
-		pc_O_Class_habitability = 0.15
-		pc_P_Class_habitability = 0.50
+		pc_H_class_habitability = 0.05
+		pc_M1_class_habitability = 0.40	
+		pc_M2_class_habitability = 0.20
+		pc_M3_class_habitability = 0.80
+		pc_M4_class_habitability = 0.30
+		pc_O_class_habitability = 0.15
+		pc_P_class_habitability = 0.50
 	}
 }
-trait_pc_M4_Class_preference = {
+trait_pc_M4_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.50
-		pc_M1_Class_habitability = 0.40	
-		pc_M2_Class_habitability = 0.10
-		pc_M3_Class_habitability = 0.30
-		pc_M4_Class_habitability = 0.80
-		pc_O_Class_habitability = 0.05
-		pc_P_Class_habitability = 0.10
+		pc_H_class_habitability = 0.50
+		pc_M1_class_habitability = 0.40	
+		pc_M2_class_habitability = 0.10
+		pc_M3_class_habitability = 0.30
+		pc_M4_class_habitability = 0.80
+		pc_O_class_habitability = 0.05
+		pc_P_class_habitability = 0.10
 	}
 }
-trait_pc_P_Class_preference = {
+trait_pc_P_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.05
-		pc_M1_Class_habitability = 0.40	
-		pc_M2_Class_habitability = 0.05
-		pc_M3_Class_habitability = 0.60
-		pc_M4_Class_habitability = 0.10
-		pc_O_Class_habitability = 0.50
-		pc_P_Class_habitability = 0.80
+		pc_H_class_habitability = 0.05
+		pc_M1_class_habitability = 0.40	
+		pc_M2_class_habitability = 0.05
+		pc_M3_class_habitability = 0.60
+		pc_M4_class_habitability = 0.10
+		pc_O_class_habitability = 0.50
+		pc_P_class_habitability = 0.80
 	}
 }
-trait_pc_O_Class_preference = {
+trait_pc_O_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ocean_preference.dds"
 	modifier = {
-		pc_H_Class_habitability = 0.00
-		pc_M1_Class_habitability = 0.70
-		pc_M2_Class_habitability = 0.60
-		pc_M3_Class_habitability = 0.20
-		pc_M4_Class_habitability = 0.20
-		pc_O_Class_habitability = 0.90
-		pc_P_Class_habitability = 0.30
+		pc_H_class_habitability = 0.00
+		pc_M1_class_habitability = 0.70
+		pc_M2_class_habitability = 0.60
+		pc_M3_class_habitability = 0.20
+		pc_M4_class_habitability = 0.20
+		pc_O_class_habitability = 0.90
+		pc_P_class_habitability = 0.30
 	}
 }
 trait_pc_ai_preference = {
@@ -94,13 +94,13 @@ trait_pc_ai_preference = {
 	modification = no
 	modifier = {
 		pc_ai_habitability = 1.0
-		pc_H_Class_habitability = 0
-		pc_M1_Class_habitability = 0	
-		pc_M2_Class_habitability = 0
-		pc_M3_Class_habitability = 0
-		pc_M4_Class_habitability = 0
-		pc_O_Class_habitability = 0
-		pc_P_Class_habitability = 0	
+		pc_H_class_habitability = 0
+		pc_M1_class_habitability = 0	
+		pc_M2_class_habitability = 0
+		pc_M3_class_habitability = 0
+		pc_M4_class_habitability = 0
+		pc_O_class_habitability = 0
+		pc_P_class_habitability = 0	
 	}
 }
 trait_pc_nuked_preference = {
@@ -108,16 +108,16 @@ trait_pc_nuked_preference = {
 	modification = no
 	modifier = {
 		pc_nuked_habitability = 0.8
-		pc_H_Class_habitability = 0.15
-		pc_M1_Class_habitability = 0.15	
-		pc_M2_Class_habitability = 0.15
-		pc_M3_Class_habitability = 0.15
-		pc_M4_Class_habitability = 0.15
-		pc_O_Class_habitability = 0.15
-		pc_P_Class_habitability = 0.15
+		pc_H_class_habitability = 0.15
+		pc_M1_class_habitability = 0.15	
+		pc_M2_class_habitability = 0.15
+		pc_M3_class_habitability = 0.15
+		pc_M4_class_habitability = 0.15
+		pc_O_class_habitability = 0.15
+		pc_P_class_habitability = 0.15
 	}
 }
-trait_pc_pc_M0_Class_preference = {
+trait_pc_pc_M0_class_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_gaia_preference.dds"
 	modification = no
 	modifier = {

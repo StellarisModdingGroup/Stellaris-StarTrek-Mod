@@ -50,7 +50,7 @@
 
 
 # H CLASS PLANET
-pc_H_Class = {
+pc_H_class = {
 	entity = "desert_planet"
 	picture = pc_desert	# Use desert portrait art 
 
@@ -80,7 +80,7 @@ pc_H_Class = {
 	colonizable = yes
 	colonization_tech = { "tech_desert_colonization" }
 }
-pc_K_Class = {
+pc_K_class = {
 	entity = "barren_planet"
 	entity_scale = @planet_standard_scale
 	picture = pc_barren	# Use barren portrait art 
@@ -108,7 +108,7 @@ pc_K_Class = {
 	starting_planet = no
 }
 # L1 CLASS PLANET
-pc_L1_Class = {
+pc_L1_class = {
 	entity = "continental_planet"
 	picture = pc_continental	# Use continental portrait art 
 	tile_set = pc_M1_Class
@@ -141,7 +141,7 @@ pc_L1_Class = {
 	starting_planet = no
 }
 # L2 CLASS PLANET
-pc_L2_Class = {
+pc_L2_class = {
 	entity = "tundra_planet"
 	picture = pc_tundra	# Use tundra portrait art 
 	tile_set = pc_M3_Class
@@ -174,7 +174,7 @@ pc_L2_Class = {
 	starting_planet = no
 }
 # L3 CLASS PLANET
-pc_L3_Class = {
+pc_L3_class = {
 	entity = "arid_planet"
 	picture = pc_arid	# Use arid portrait art 
 	tile_set = pc_M4_Class
@@ -207,7 +207,7 @@ pc_L3_Class = {
 	starting_planet = no
 }
 # M1 CLASS PLANET
-pc_M1_Class = {
+pc_M1_class = {
 entity = "continental_planet"
 	picture = pc_continental	# Use continental portrait art 
 
@@ -237,7 +237,7 @@ entity = "continental_planet"
 	colonization_tech = { "tech_continental_colonization" }
 }
 # M2 CLASS PLANET
-pc_M2_Class = {
+pc_M2_class = {
 	entity = "tropical_planet"
 	entity_scale = @planet_standard_scale
 	picture = pc_tropical	# Use tropical portrait art 
@@ -266,7 +266,7 @@ pc_M2_Class = {
 	colonization_tech = { "tech_tropical_colonization" }
 }
 # M3 CLASS PLANET
-pc_M3_Class = {
+pc_M3_class = {
 	entity = "tundra_planet"
 	picture = pc_tundra	# Use tundra portrait art 
 	entity_scale = @planet_standard_scale
@@ -294,7 +294,7 @@ pc_M3_Class = {
 	colonization_tech = { "tech_tundra_colonization" }
 }
 # M4 CLASS PLANET
-pc_M4_Class = {
+pc_M4_class = {
 	entity = "arid_planet"
 	picture = pc_arid	# Use arid portrait art 
 	entity_scale = @planet_standard_scale
@@ -322,7 +322,7 @@ pc_M4_Class = {
 	colonization_tech = { "tech_arid_colonization" }
 }
 # O CLASS PLANET
-pc_O_Class = {
+pc_O_class = {
 	entity = "ocean_planet"
 	picture = pc_ocean	# Use ocean portrait art 
 	entity_scale = @planet_standard_scale
@@ -350,7 +350,7 @@ pc_O_Class = {
 	colonization_tech = { "tech_ocean_colonization" }
 }
 # P CLASS PLANET
-pc_P_Class = {
+pc_P_class = {
 	entity = "arctic_planet"
 	picture = pc_arctic	# Use ocean portrait art 
 	entity_scale = @planet_standard_scale
@@ -382,8 +382,175 @@ pc_P_Class = {
 # Uninhabitable Planets
 # ###########
 
-pc_gas_giant = {
+
+pc_asteroid = {
+	entity = "asteroid"
+	entity_scale = 1.5
+	icon_frame = 18
+	
+	asteroid = yes
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = 5
+	
+	colonizable = no
+	survey_time_factor = 0.5
+}
+
+pc_A_class = {
+	entity = "molten_planet"
+	entity_scale = @planet_standard_scale
+	picture = pc_molten	
+	icon_frame = 12
+	
+	atmosphere_color 		= hsv { 0.05 0.65 1.4 }		#DONE
+	atmosphere_intensity 	= 0.05
+	atmosphere_width 		= 1.0
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 60
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 14 max = 30 }
+	moon_size = { min = 6 max = 12 }
+	
+	colonizable = no
+}
+
+pc_B_class = {
+	entity = "frozen_planet"		#DONE
+	entity_scale = @planet_standard_scale
+	picture = pc_frozen
+	icon_frame = 13
+	
+	atmosphere_color 		= hsv { 0.55 0.15 0.7 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 120
+	max_distance_from_sun = 1000
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 10 max = 25 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+pc_C_class = {
+	entity = "cold_barren_planet"
+	entity_scale = @planet_standard_scale
+	picture = pc_barren_cold
+	icon_frame = 9
+	
+	atmosphere_color 		= hsv { 0.55 0.3 0.75 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 40
+	max_distance_from_sun = 200
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+pc_D_class = {
+	entity = "barren_planet"
+	picture = pc_barren
+	entity_scale = @planet_standard_scale
+	icon_frame = 10
+	
+	atmosphere_color 		= hsv { 0.1 0.4 0.7 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 40
+	max_distance_from_sun = 200
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+pc_F_class = {
+	entity = "molten_planet"
+	picture = pc_molten
+	entity_scale = @planet_standard_scale
+	icon_frame = 12
+	
+	atmosphere_color 		= hsv { 0.05 0.65 1.4 }		#DONE
+	atmosphere_intensity 	= 0.05
+	atmosphere_width 		= 1.0
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 60
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 14 max = 30 }
+	moon_size = { min = 6 max = 12 }
+	
+	colonizable = no
+}
+pc_G_class = {
+	entity = "frozen_planet"		#DONE
+	entity_scale = @planet_standard_scale
+	picture = pc_frozen
+	icon_frame = 13
+	
+	atmosphere_color 		= hsv { 0.55 0.15 0.7 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = 120
+	max_distance_from_sun = 1000
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 10 max = 25 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}
+pc_J_class = {
 	entity = "gas_giant"
+	picture = pc_gas_giant
 	entity_scale = 14
 	icon_frame = 14
 	
@@ -409,100 +576,9 @@ pc_gas_giant = {
 	colonizable = no
 }
 
-pc_asteroid = {
-	entity = "asteroid"
-	entity_scale = 1.5
-	icon_frame = 18
-	
-	asteroid = yes
-	
-	spawn_odds = 10
-	
-	extra_orbit_size = 0
-	extra_planet_count = 0
-	
-	chance_of_ring = 0
-	
-	planet_size = 5
-	
-	colonizable = no
-	survey_time_factor = 0.5
-}
-
-pc_molten = {
-	entity = "molten_planet"
-	entity_scale = @planet_standard_scale
-	icon_frame = 12
-	
-	atmosphere_color 		= hsv { 0.05 0.65 1.4 }		#DONE
-	atmosphere_intensity 	= 0.05
-	atmosphere_width 		= 1.0
-
-	min_distance_from_sun = 0
-	max_distance_from_sun = 60
-	spawn_odds = 10
-	
-	extra_orbit_size = 0
-	extra_planet_count = 0
-	
-	chance_of_ring = 0
-	
-	planet_size = { min = 14 max = 30 }
-	moon_size = { min = 6 max = 12 }
-	
-	colonizable = no
-}
-
-pc_barren = {
-	entity = "barren_planet"
-	entity_scale = @planet_standard_scale
-	icon_frame = 10
-	
-	atmosphere_color 		= hsv { 0.1 0.4 0.7 }		#DONE
-	atmosphere_intensity 	= 1.0
-	atmosphere_width 		= 0.5
-
-	min_distance_from_sun = 40
-	max_distance_from_sun = 200
-	spawn_odds = 10
-	
-	extra_orbit_size = 0
-	extra_planet_count = 0
-	
-	chance_of_ring = 0.2
-	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
-	
-	colonizable = no
-}
-
-pc_barren_cold = {
-	entity = "cold_barren_planet"
-	entity_scale = @planet_standard_scale
-	icon_frame = 9
-	
-	atmosphere_color 		= hsv { 0.55 0.3 0.75 }		#DONE
-	atmosphere_intensity 	= 1.0
-	atmosphere_width 		= 0.5
-
-	min_distance_from_sun = 40
-	max_distance_from_sun = 200
-	spawn_odds = 10
-	
-	extra_orbit_size = 0
-	extra_planet_count = 0
-	
-	chance_of_ring = 0.2
-	
-	planet_size = { min = 12 max = 30 }
-	moon_size = { min = 6 max = 10 }
-	
-	colonizable = no
-}
-
-pc_toxic = {
+pc_N_class = {
 	entity = "toxic_planet"
+	picture = pc_toxic
 	entity_scale = @planet_standard_scale
 	icon_frame = 11
 
@@ -526,38 +602,15 @@ pc_toxic = {
 	colonizable = no
 }
 
-pc_frozen = {
-	entity = "frozen_planet"		#DONE
-	entity_scale = @planet_standard_scale
-	icon_frame = 13
-	
-	atmosphere_color 		= hsv { 0.55 0.15 0.7 }
-	atmosphere_intensity 	= 1.0
-	atmosphere_width 		= 0.5
-
-	min_distance_from_sun = 120
-	max_distance_from_sun = 1000
-	spawn_odds = 10
-	
-	extra_orbit_size = 0
-	extra_planet_count = 0
-	
-	chance_of_ring = 0
-	
-	planet_size = { min = 10 max = 25 }
-	moon_size = { min = 6 max = 10 }
-	
-	colonizable = no
-}
 
 # ###########
 # Special Planets
 # ###########
 
-pc_nuked = {
+pc_X_class = {
 	entity = "nuked_planet"
 	picture = pc_tundra # there's no unique nuked_planet picture
-	tile_set = pc_tundra
+	tile_set = pc_M3_class
 	entity_scale = @planet_standard_scale
 	icon_frame = 17
 
@@ -581,6 +634,32 @@ pc_nuked = {
 	starting_planet = no
 	colonizable = yes
 	colonization_tech = { "tech_atmospheric_manipulation" }
+}
+
+pc_Y_class = {
+	picture = pc_toxic
+	entity = "toxic_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 11
+
+	atmosphere_color 		= hsv { 0.19 0.45 0.9 }		#DONE
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+	
+	min_distance_from_sun = 60
+	max_distance_from_sun = 110
+	
+	spawn_odds = 10
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = 12 max = 25 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
 }
 
 pc_shielded = {
@@ -1061,12 +1140,21 @@ pc_ringworld_seam_damaged = {
 random_list = {
 	name = "rl_habitable_normal"
 	planets = {
-		"pc_desert"
-		"pc_tropical"
-		"pc_arid"
-		"pc_ocean"
-		"pc_tundra"
-		"pc_arctic"
-		"pc_continental"
+		"pc_M1_class"
+		"pc_M3_class"
+		"pc_M2_class"
+		"pc_M4_class"
+		"pc_O_class"
+		"pc_P_class"
+		
 	}
 }
+random_list = {
+ 	name = "rl_marginal_normal"
+ 	planets = {
+ 		"pc_L1_class"
+ 		"pc_L2_class"
+ 		"pc_L3_class"
+ 		"pc_H_class"
+ 		"pc_K_class"
+ }
