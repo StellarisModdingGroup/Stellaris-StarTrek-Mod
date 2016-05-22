@@ -8,6 +8,7 @@ StarTrek = {
 		portraits = {
 				"st1"
 				"andorian"
+				"vulcan"
 		}
 		
 		graphical_culture = mammalian_01

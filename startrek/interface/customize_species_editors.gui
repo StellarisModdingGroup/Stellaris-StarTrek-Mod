@@ -1318,7 +1318,7 @@ guiTypes = {
 			containerWindowType = {
 				#This window will be moved to whatever button has the currently selected planet class
 				name = "selected"
-				position = { x = 520 y = 40 }
+				position = { x = 410 y = 10 }
 				size = { width = 110 height = 110 }
 				
 				background = {

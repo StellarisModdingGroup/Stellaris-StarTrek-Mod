@@ -1,0 +1,190 @@
+portraits = {
+	vulcan_female_01 = {	entity = "portrait_human_female_01_entity"	clothes_selector = "vulcan_female_clothes_01" hair_selector = "vulcan_female_01_hair"	greeting_sound = "vulcan_female_greetings_03"
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_female_body_01.dds"
+			}
+		}
+
+	vulcan_female_02 = {	entity = "portrait_human_female_02_entity"	clothes_selector = "vulcan_female_clothes_01" hair_selector = "vulcan_female_01_hair"	greeting_sound = "vulcan_female_greetings_04"
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_female_body_02.dds"
+			}
+		}
+
+	vulcan_female_03 = {	entity = "portrait_human_female_03_entity"	clothes_selector = "vulcan_female_clothes_01" hair_selector = "vulcan_female_01_hair"	greeting_sound = "vulcan_female_greetings_05"	
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_female_body_03.dds"
+			}
+		}
+
+	vulcan_female_04 = {	entity = "portrait_human_female_04_entity"			clothes_selector = "vulcan_female_clothes_01" 	hair_selector = "vulcan_female_01_hair"	greeting_sound = "vulcan_female_greetings_01"
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_female_body_04.dds"
+			}
+		}
+	vulcan_female_05 = {	entity = "portrait_human_female_05_entity"			clothes_selector = "vulcan_female_clothes_01" 	hair_selector = "vulcan_female_01_hair"	greeting_sound = "vulcan_female_greetings_01"
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_female_body_05.dds"
+			}
+		}
+
+	vulcan_male_01 = {	entity = "portrait_human_male_01_entity"	clothes_selector = "vulcan_male_clothes_01" hair_selector = "vulcan_male_hair_01"	greeting_sound = "vulcan_male_greetings_03" 
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_male_body_01.dds"
+			}
+		}
+
+	vulcan_male_02 = {	entity = "portrait_human_male_02_entity"	clothes_selector = "vulcan_male_clothes_01" hair_selector = "vulcan_male_hair_01"	greeting_sound = "vulcan_male_greetings_04" 
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_male_body_02.dds"
+			}
+		}
+	vulcan_male_03 = {	entity = "portrait_human_male_03_entity"	clothes_selector = "vulcan_male_clothes_01" hair_selector = "vulcan_male_hair_01"	greeting_sound = "vulcan_male_greetings_05" 		
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_male_body_03.dds"
+			}
+		}
+	vulcan_male_04 = {	entity = "portrait_human_male_04_entity"			clothes_selector = "vulcan_male_clothes_01" 	hair_selector = "vulcan_male_hair_01"	greeting_sound = "vulcan_male_greetings_01" 
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_male_body_04.dds"
+			}
+		}
+	vulcan_male_05 = {	entity = "portrait_human_male_05_entity"			clothes_selector = "vulcan_male_clothes_01" 	hair_selector = "vulcan_male_hair_01"	greeting_sound = "vulcan_male_greetings_01" 
+		character_textures = {
+					"gfx/models/portraits/vulcan/vulcan_male_body_05.dds"
+			}
+		}
+
+}
+portrait_groups = {
+	vulcan = {
+		default = vulcan_female_04
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					vulcan_male_01
+					vulcan_male_02
+					vulcan_male_03
+					vulcan_male_04
+					vulcan_male_05
+
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					vulcan_female_01
+					vulcan_female_02
+					vulcan_female_03
+					vulcan_female_04
+					vulcan_female_05
+
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					vulcan_female_01
+					vulcan_female_02
+					vulcan_female_03					
+					vulcan_female_04
+					vulcan_female_05
+					vulcan_male_01
+					vulcan_male_02
+					vulcan_male_03					
+					vulcan_male_04
+					vulcan_male_05
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					vulcan_female_01
+					vulcan_female_02
+					vulcan_female_03				
+					vulcan_female_04
+					vulcan_female_05
+					vulcan_male_01
+					vulcan_male_02
+					vulcan_male_03					
+					vulcan_male_04
+					vulcan_male_05
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					vulcan_female_01
+					vulcan_female_02
+					vulcan_female_03					
+					vulcan_female_04
+					vulcan_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					vulcan_male_01
+					vulcan_male_02
+					vulcan_male_03					
+					vulcan_male_04
+					vulcan_male_05
+					
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					vulcan_female_01
+					vulcan_female_02
+					vulcan_female_03					
+					vulcan_female_04
+					vulcan_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					vulcan_male_01
+					vulcan_male_02
+					vulcan_male_03					
+					vulcan_male_04
+					vulcan_male_05
+				}
+			}
+		}
+	}
+}
