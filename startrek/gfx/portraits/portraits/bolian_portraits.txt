@@ -1,0 +1,116 @@
+portraits = {
+	# Bolian
+	bolian_female_01 = {	
+		entity = "portrait_bolian_female_01_entity"	clothes_selector = "mammalian_bolian_female_clothes_01" 	hair_selector = "no_texture"	greeting_sound = "human_female_greetings_03"
+		character_textures = {
+			"gfx/models/portraits/bolian/bolian_female_body_01.dds"
+		}
+	}
+	bolian_male_01 = {	
+		entity = "portrait_bolian_male_01_entity"	clothes_selector = "mammalian_bolian_male_clothes_01" 	hair_selector = "no_texture"		greeting_sound = "human_male_greetings_03" 
+		character_textures = {
+			"gfx/models/portraits/bolian/bolian_male_body_01.dds"
+		}
+	}
+	bolian_male_02 = {	
+		entity = "portrait_bolian_male_02_entity"	clothes_selector = "mammalian_bolian_male_clothes_01" 	hair_selector = "no_texture"		greeting_sound = "human_male_greetings_03" 
+		character_textures = {
+			"gfx/models/portraits/bolian/bolian_male_body_02.dds"
+		}
+	}
+}
+
+portrait_groups = {
+	bolian = {
+		default = bolian_male_02
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					bolian_male_01
+					bolian_male_02
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					bolian_female_01
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					bolian_female_01
+					bolian_male_01
+					bolian_male_02
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					bolian_female_01
+					bolian_male_01
+					bolian_male_02
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					bolian_female_01
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					bolian_male_01
+					bolian_male_02
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					bolian_female_01
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					bolian_male_01
+					bolian_male_02
+				}
+			}
+		}
+	}	
+}
