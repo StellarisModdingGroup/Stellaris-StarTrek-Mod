@@ -1,0 +1,183 @@
+portraits = {
+	# bajoran
+	bajoran_female_01 = {	
+		entity = "portrait_bajoran_female_01_entity"	clothes_selector = "mammalian_bajoran_female_clothes_01" 	hair_selector = "human_female_hair_01"	greeting_sound = "human_female_greetings_03"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_female_body_01.dds"
+		}
+	}
+	bajoran_female_02 = {	
+		entity = "portrait_bajoran_female_02_entity"	clothes_selector = "mammalian_bajoran_female_clothes_01" 	hair_selector = "human_female_hair_01"	greeting_sound = "human_female_greetings_04"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_female_body_02.dds"
+		}
+	}
+	bajoran_female_03 = {	
+		entity = "portrait_bajoran_female_03_entity"	clothes_selector = "mammalian_bajoran_female_clothes_01" 	hair_selector = "human_female_hair_01"	greeting_sound = "human_female_greetings_05"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_female_body_03.dds"
+		}
+	}	
+	bajoran_female_04 = {	
+		entity = "portrait_bajoran_female_04_entity"	clothes_selector = "mammalian_bajoran_female_clothes_01" 	hair_selector = "human_female_hair_01"	greeting_sound = "human_female_greetings_01"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_female_body_04.dds"
+		}
+	}
+	bajoran_female_05 = {	
+		entity = "portrait_bajoran_female_05_entity"	clothes_selector = "mammalian_bajoran_female_clothes_01" 	hair_selector = "human_female_hair_01"	greeting_sound = "human_female_greetings_02"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_female_body_05.dds"
+		}
+	}
+	bajoran_male_01 = {	
+		entity = "portrait_bajoran_male_01_entity"	clothes_selector = "mammalian_bajoran_male_clothes_01" 	hair_selector = "human_male_hair_01"		greeting_sound = "human_male_greetings_03" 
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_male_body_01.dds"
+		}
+	}	
+	bajoran_male_02 = {	
+		entity = "portrait_bajoran_male_02_entity"	clothes_selector = "mammalian_bajoran_male_clothes_01" 	hair_selector = "human_male_hair_01"		greeting_sound = "human_male_greetings_04" 
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_male_body_02.dds"
+		}
+	}
+	bajoran_male_04 = {	
+		entity = "portrait_bajoran_male_04_entity"	clothes_selector = "mammalian_bajoran_male_clothes_01" 	hair_selector = "human_male_hair_01"		greeting_sound = "human_male_greetings_01" 
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_male_body_04.dds"
+		}
+	}
+	bajoran_male_05 = {	
+		entity = "portrait_bajoran_male_05_entity"	clothes_selector = "mammalian_bajoran_male_clothes_01" 	hair_selector = "human_male_hair_01"	greeting_sound = "human_male_greetings_02"
+		character_textures = {
+			"gfx/models/portraits/bajoran/bajoran_male_body_05.dds"
+		}
+	}
+}
+
+portrait_groups = {
+	bajoran = {
+		default = bajoran_female_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					bajoran_male_01
+					bajoran_male_02
+					bajoran_male_04
+					bajoran_male_05
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					bajoran_female_01
+					bajoran_female_02
+					bajoran_female_03
+					bajoran_female_04
+					bajoran_female_05
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					bajoran_female_01
+					bajoran_female_02
+					bajoran_female_03					
+					bajoran_female_04
+					bajoran_female_05
+					bajoran_male_01
+					bajoran_male_02				
+					bajoran_male_04
+					bajoran_male_05
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					bajoran_female_01
+					bajoran_female_02
+					bajoran_female_03				
+					bajoran_female_04
+					bajoran_female_05
+					bajoran_male_01
+					bajoran_male_02
+					bajoran_male_03					
+					bajoran_male_04
+					bajoran_male_05
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					bajoran_female_01
+					bajoran_female_02
+					bajoran_female_03					
+					bajoran_female_04
+					bajoran_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					bajoran_male_01
+					bajoran_male_02			
+					bajoran_male_04
+					bajoran_male_05
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					bajoran_female_01
+					bajoran_female_02
+					bajoran_female_03					
+					bajoran_female_04
+					bajoran_female_05
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					bajoran_male_01
+					bajoran_male_02				
+					bajoran_male_04
+					bajoran_male_05
+				}
+			}
+		}
+	}	
+}
