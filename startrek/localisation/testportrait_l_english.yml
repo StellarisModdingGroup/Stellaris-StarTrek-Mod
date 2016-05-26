@@ -20,14 +20,14 @@
 
  
  pc_K_class:0"Class K Planet"
- pc_K_class_desc:0"Class K planets are characterized as being adaptable for Humans by use of pressure domes and life support systems."
+ pc_K_class_desc:0"Class K planets are characterized as being adaptable for Humanoids by use of pressure domes and life support systems."
  pc_L1_class:0"Class L type 1 Planet"
- pc_L1_class_desc:0"Class L type 1 Planets were located within the ecosphere of a star system. They were categorized by a rocky and barren surface with little surface water and an atmosphere of oxygen/argon with a high concentration of carbon dioxide. Native lifeforms were limited to plant life, although the majority of class L planets were suitable for humanoid colonization."
+ pc_L1_class_desc:0"Class L type 1 Planets are rocky and barren worlds with many great landmasses separated by oceans and an atmosphere of oxygen, argon and nitrogen with a high concentration of carbon dioxide. Native lifeforms were limited to plant life."
  pc_L2_class:0"Class L type 2 Planet"
- pc_L2_class_desc:0"Class L type 2 Planets were located within the ecosphere of a star system. They were categorized by a rocky and barren surface with little surface water and an atmosphere of oxygen/argon with a high concentration of carbon dioxide. Native lifeforms were limited to plant life, although the majority of class L planets were suitable for humanoid colonization."
+ pc_L2_class_desc:0"Class L type 2 Planets are cold rocky and barren worlds with little surface water and an atmosphere of oxygen, argon and nitrogen with a high concentration of carbon dioxide. Native lifeforms were limited to plant life."
  pc_L3_class:0"Class L type 3 Planet"
- pc_L3_class_desc:0"Class L type 3 Planets were located within the ecosphere of a star system. They were categorized by a rocky and barren surface with little surface water and an atmosphere of oxygen/argon with a high concentration of carbon dioxide. Native lifeforms were limited to plant life, although the majority of class L planets were suitable for humanoid colonization."
-
+ pc_L3_class_desc:0"Class L type 3 Planets are hot rocky and barren worlds with little surface water and an atmosphere of oxygen, argon and nitrogen with a high concentration of carbon dioxide. Native lifeforms were limited to plant life."
+ 
  pc_A_class:0 "Class A Planet"
  pc_A_class_desc:0 "Rocky world that is scorching hot. The atmosphere is thin or non-existent, and lava from the interior flows freely due to constant volcanic eruptions and is also heated by star light. This type of planet cannot sustain organic life."
  pc_B_class:0 "Class B Planet"
@@ -50,8 +50,37 @@
  pc_X_class_desc:0 "A rocky world with a nitrogen-oxygen atmosphere. It is currently experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
  
  
+ pc_H_class_tile:0 "Desert Terrain"
+ pc_H_class_tile_desc:0 "Barren and dry terrain with occasional rocky outcroppings."
  pc_M1_class_tile:0 "Terrestial Land"
  pc_M1_class_tile_desc:0 "Diverse forested terrain with a mild climate."
+ pc_M2_class_tile:0 "Tropical Terrain"
+ pc_M2_class_tile_desc:0 "Vegetation-covered terrain with a warm and humid climate."
+ pc_M3_class_tile:0 "Tundra Terrain"
+ pc_M3_class_tile_desc:0 "Cold and wind-swept steppes with sparse vegetation."
+ pc_M4_class_tile:0 "Arid Terrain"
+ pc_M4_class_tile_desc:0 "Dry and rocky terrain with sparse vegetation."
+ pc_O_class_tile:0 "Ocean Terrain"
+ pc_O_class_tile_desc:0 "Isolated islands and archipelagos surrounded by ocean."
+ pc_P_class_tile:0 "Arctic Terrain"
+ pc_P_class_tile_desc:0 "Snow- and ice-covered terrain with no vegetation."
+ 
+ pc_M0_class_tile:0 "Ideal Terrain"
+ pc_M0_class_tile_desc:0 "Diverse terrain with biomes that are eminently suitable to most forms of life."
+ 
+ pc_K_class_tile:0 "Barren Terrain"
+ pc_K_class_tile_desc:0 "Dry and rocky terrain without any vegetation."
+ pc_L1_class_tile:0 "Proto-Terrestial Land"
+ pc_L1_class_tile_desc:0 "Undifferentiated forested terrain with a mild climate."
+ pc_L2_class_tile:0 "Proto-Tundra Terrain"
+ pc_L2_class_tile_desc:0 "Cold and wind-swept steppes with sparse undifferentiated vegetation."
+ pc_L3_class_tile:0 "Proto-Arid Terrain"
+ pc_L3_class_tile_desc:0 "Dry and rocky terrain with sparse undifferentiated vegetation."
+ 
+ pc_X_class_tile:0 "Wasteland Terrain"
+ pc_X_class_tile_desc:0 "Harsh, war-torn terrain. Radiation levels are low enough to support some life."
+
+ 
  
  trait_pc_H_class_preference:0 "Very Hot Preference"
  trait_pc_M1_class_preference:0 "Medium Preference"
@@ -60,3 +89,37 @@
  trait_pc_M4_class_preference:0 "Dry-Hot Preference"
  trait_pc_O_class_preference:0 "Humid Preference"
  trait_pc_P_class_preference:0 "Very Cold Preference"
+ 
+ pc_H_class_habitability:0 "H Class habitability"
+ pc_M1_class_habitability:0 "M1 Class habitability"
+ pc_M2_class_habitability:0 "M2 Class habitability"
+ pc_M3_class_habitability:0 "M3 Class habitability"
+ pc_M4_class_habitability:0 "M4 Class habitability"
+ pc_O_class_habitability:0 "O Class habitability"
+ pc_P_class_habitability:0 "P Class habitability"
+ 
+ pc_L1_class_habitability:0 "L1 Class habitability"	
+ pc_L2_class_habitability:0 "L2 Class habitability"
+ pc_L3_class_habitability:0 "L3 Class habitability"
+ pc_K_class_habitability:0 "K Class habitability"
+ 
+ pc_X_class_habitability:0 "X Class habitability"
+ pc_M0_class_habitability:0 "M0 Class habitability"
+ 
+
+ trait_pc_P_class_preference_desc:1 "§LClimate preference is determined at the genetic level, by eons of evolution or skillful manipulation.§!"
+ trait_pc_O_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_M1_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_M3_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_M4_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_H_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_M2_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_X_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"
+
+ trait_pc_M0_class_preference_desc:1 "$trait_pc_arctic_preference_desc$"

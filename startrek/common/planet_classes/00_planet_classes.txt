@@ -84,7 +84,8 @@ pc_K_class = {
 	entity = "barren_planet"
 	entity_scale = @planet_standard_scale
 	picture = pc_barren	# Use barren portrait art 
-	tile_set = pc_arid
+	tile_set = pc_H_class
+	
 	icon_frame = 10
 	
 	atmosphere_color 		= hsv { 0.1 0.4 0.7 }		#DONE
@@ -752,7 +753,7 @@ pc_infested = {
 }
 
 
-pc_M0_Class = {
+pc_M0_class = {
 	entity = "gaia_planet"
 	picture = pc_continental # there's no unique gaia_planet picture
 	tile_set = pc_M1_Class

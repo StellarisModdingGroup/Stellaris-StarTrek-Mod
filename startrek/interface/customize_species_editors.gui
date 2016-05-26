@@ -2057,16 +2057,16 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "colors"
-			slotSize = { width = 40 height = 40 }
-			max_slots_horizontal = 5
+			slotSize = { width = 4 height = 5 }
+			max_slots_horizontal = 50
 			format = UPPER_LEFT
-			position = { x = 548 y = 120 }
-			size = { width = 210 height = 210 }
-			padding = { left = 5 top = 5 bottom = 5 }
+			position = { x = 544 y = 120 }
+			size = { width = 210 height = 230 }
+			padding = { left = 3 top = 3 bottom = 3 }
 			backGround = {
 				name = "bg"
 				spriteType = "GFX_tiles_dark_area_cut_8"
-				position = { x = -10 y = -10 }
+				position = { x = -5 y = -10 }
 			}
 		}
 		buttonType={
