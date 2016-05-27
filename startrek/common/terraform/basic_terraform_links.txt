@@ -1,0 +1,452 @@
+
+# ###########
+# Example Script #
+# ###########
+
+# terraform_link = {
+	# from = "pc_P_class"			#
+	# to = "pc_M3_class"			# terraform from pc_P_class to pc_M3_class
+
+	# duration = 10				# How long it will take in days. Leave this blank to use default value ( TERRAFORM_DEFAULT_DURATION_DAYS in defines )
+	
+	# # cost
+	# energy = 30
+	# resources = {
+		# sr_terraform_liquids = 2	#will cost 2 sr_terraform_liquids, you can use any strategic resource here
+	# }
+	
+	# # normal and-trigger
+	# # Scope is a country scope
+	# # from scope is a planet scope
+	# condition = {
+		# has_technology = "tech_atmospheric_manipulation"
+	# }
+# }
+
+# Arctic to Ocean
+terraform_link = {
+	from = "pc_P_class"
+	to = "pc_O_class"
+	
+	#cost
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M4_class
+					ideal_planet_class = pc_H_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Ocean to Arctic
+terraform_link = {
+	from = "pc_O_class"
+	to = "pc_P_class"
+	
+	#cost
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_H_class
+					ideal_planet_class = pc_M2_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Tundra to Arctic
+terraform_link = {
+	from = "pc_M3_class"
+	to = "pc_P_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_liquids = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_H_class
+					ideal_planet_class = pc_M2_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Arctic to Tundra
+terraform_link = {
+	from = "pc_P_class"
+	to = "pc_M3_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_liquids = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M2_class
+					ideal_planet_class = pc_M1_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Tundra to Arid
+terraform_link = {
+	from = "pc_M3_class"
+	to = "pc_M4_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M1_class
+					ideal_planet_class = pc_O_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Arid to Tundra
+terraform_link = {
+	from = "pc_M4_class"
+	to = "pc_M3_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M2_class
+					ideal_planet_class = pc_M1_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Arid to Desert
+terraform_link = {
+	from = "pc_M4_class"
+	to = "pc_H_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_O_class
+					ideal_planet_class = pc_P_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Desert to Arid
+terraform_link = {
+	from = "pc_H_class"
+	to = "pc_M4_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M1_class
+					ideal_planet_class = pc_O_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Desert to Tropical
+terraform_link = {
+	from = "pc_H_class"
+	to = "pc_M2_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_liquids = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_P_class
+					ideal_planet_class = pc_M3_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Tropical to Desert
+terraform_link = {
+	from = "pc_M2_class"
+	to = "pc_H_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_O_class
+					ideal_planet_class = pc_P_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Tropical to Ocean
+terraform_link = {
+	from = "pc_M2_class"
+	to = "pc_O_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M4_class
+					ideal_planet_class = pc_H_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Ocean to Tropical
+terraform_link = {
+	from = "pc_O_class"
+	to = "pc_M2_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_P_class
+					ideal_planet_class = pc_M3_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Continental to Ocean
+terraform_link = {
+	from = "pc_M1_class"
+	to = "pc_O_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_liquids = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M4_class
+					ideal_planet_class = pc_H_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Ocean to Continental
+terraform_link = {
+	from = "pc_O_class"
+	to = "pc_M1_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 3
+	}
+
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M4_class
+					ideal_planet_class = pc_M3_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Continental to Tropical
+terraform_link = {
+	from = "pc_M1_class"
+	to = "pc_M2_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_P_class
+					ideal_planet_class = pc_M3_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
+
+# Tropical to Continental
+terraform_link = {
+	from = "pc_M2_class"
+	to = "pc_M1_class"
+	
+	energy = 1500
+	resources = {
+		sr_terraform_gases = 2
+		sr_terraform_liquids = 2
+	}
+	
+	condition = {
+		if = {
+			limit = {
+				OR = {
+					ideal_planet_class = pc_M4_class
+					ideal_planet_class = pc_M3_class
+				}
+			}
+			has_technology = "tech_atmospheric_manipulation"
+			else = {
+				has_technology = "tech_terrestrial_sculpting"
+			}
+		}
+	}
+}
